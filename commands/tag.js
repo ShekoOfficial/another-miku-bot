@@ -21,6 +21,7 @@ exports.run = async (bot, message, args) => {
     fs.writeFile('./commands/tag.json', JSON.stringify(tagFile), (err) => {
       if (err) console.log(err);
     });
+    delete require.cache[require.resolve('./tag.js')];
     return;
   }
   try {

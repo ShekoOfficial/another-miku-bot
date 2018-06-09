@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const fs = require('fs');
-const math = require('mathjs');
 const chalk = require('chalk');
 const {
   promisify
@@ -9,21 +8,6 @@ const {
 const readdir = promisify(fs.readdir);
 const Enmap = require("enmap");
 const EnmapLevel = require("enmap-level");
-const {
-  Canvas
-} = require("canvas-constructor");
-const {
-  resolve,
-  join
-} = require("path");
-const {
-  Attachment
-} = require("discord.js");
-const {
-  get
-} = require("snekfetch");
-const nekoclient = require('nekos.life');
-const neko = new nekoclient();
 require('./util/eventLoader.js')(bot);
 require("./modules/function.js")(bot);
 
@@ -45,7 +29,7 @@ var reload = (message, cmd) => {
   };
 }
 
-bot.config = require('./config.json');
+bot.config = require('./config.js').config;
 bot.commands = new Enmap();
 bot.aliases = new Enmap();
 bot.cdTime = new Enmap();
@@ -79,5 +63,5 @@ const init = async () => {
 };
 
 exports.reload = reload;
-bot.login(bot.config.token);
+bot.login(process.env.TOKEN);
 init();

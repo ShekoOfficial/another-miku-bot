@@ -4,13 +4,12 @@
   "description": "Miku Tutorial Bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "brian",
   "license": "MIT",
   "dependencies": {
-    "canvas": "^1.6.11",
-    "canvas-constructor": "^1.0.1",
     "cat-names": "^1.0.2",
     "chalk": "^2.4.1",
     "discord.js": "^11.3.2",

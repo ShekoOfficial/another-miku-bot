@@ -9,8 +9,6 @@ exports.run = (bot, message, args) => {
     .setDescription("Hello, I\'m Miku!\nA \`just4fun\` discord bot written over discord.js framework with ❤ by 12042#5754.")
     .addField("NodeJS version:", `${process.version.slice(1).split(".").join(".")}`, true)
     .addField("discord.js version:", `${package.dependencies["discord.js"].slice(1)}`, true)
-    .addField("canvas version:", `${package.dependencies["canvas"].slice(1)}`, true)
-    .addField("canvas-constructor version:", `${package.dependencies["canvas-constructor"].slice(1)}`, true)
     .addField("cat-names version:", `${package.dependencies["cat-names"].slice(1)}`, true)
     .addField("chalk version:", `${package.dependencies["chalk"].slice(1)}`, true)
     .addField("dog-names version:", `${package.dependencies["dog-names"].slice(1)}`, true)

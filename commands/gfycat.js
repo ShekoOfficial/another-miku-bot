@@ -1,9 +1,8 @@
 const Discord = require('discord.js');
-const config = require('../config.json');
 const Gfycat = require('gfycat-sdk');
 var gfycat = new Gfycat({
-  clientId: config.client_id,
-  clientSecret: config.client_secret
+  clientId: process.env.GFYID,
+  clientSecret: process.env.GFYSECRET
 });
 
 // STARTS
