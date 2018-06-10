@@ -1,13 +1,14 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const fs = require('fs');
-const chalk = require('chalk');
 const {
   promisify
 } = require("util");
 const readdir = promisify(fs.readdir);
 const Enmap = require("enmap");
 const EnmapLevel = require("enmap-level");
+const nekoclient = require('nekos.life');
+const neko = new nekoclient();
 require('./util/eventLoader.js')(bot);
 require("./modules/function.js")(bot);
 
@@ -40,11 +41,11 @@ bot.settings = new Enmap({
 });
 
 bot.on('warn', (e) => {
-  console.log(chalk.bgYellow(e));
+  console.log(e);
 });
 
 bot.on('error', (e) => {
-  console.log(chalk.bgRed(e));
+  console.log(e);
 });
 
 // INITIALIZATION

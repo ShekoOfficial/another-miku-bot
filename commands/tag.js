@@ -21,7 +21,6 @@ exports.run = async (bot, message, args) => {
     fs.writeFile('./commands/tag.json', JSON.stringify(tagFile), (err) => {
       if (err) console.log(err);
     });
-    delete require.cache[require.resolve('./tag.js')];
     return;
   }
   try {
@@ -35,7 +34,7 @@ exports.run = async (bot, message, args) => {
 };
 
 exports.conf = {
-  aliases: [],
+  aliases: ["tags"],
   cooldown: 3
 };
 
@@ -43,7 +42,7 @@ exports.help = {
   name: "tag",
   category: "Util.",
   description: "",
-  usage: "tag \`<tag_name>\`",
+  usage: "tag \`[tag_name]\`",
   param: "",
-  aliases: ""
+  aliases: "tags"
 };
