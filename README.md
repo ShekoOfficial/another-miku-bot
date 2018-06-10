@@ -13,7 +13,7 @@ This bot is a just4fun bot, which does not meant to do administrator-side stuffs
 ### What can this bot do?
 - Fun stuffs
 - Give you quotes
-- Make you laugh
+- Makes you laugh
 - Gives you the power of the *Magic 8 Ball*
 - Much much more in future!
 
