@@ -6,7 +6,7 @@ node_modules
 *.idea
 /commands/test.js
 /commands/sleeping.js
-/assets
+/assets/
 
 #sensitive
 config.json
