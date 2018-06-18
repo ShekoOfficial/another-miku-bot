@@ -1,34 +1,28 @@
-const ownerID = require('../config.json').ownerID;
 const {
   Canvas
-} = require("canvas-constructor");
+} = require('canvas-constructor');
 const {
   resolve,
   join
-} = require("path");
+} = require('path');
 const {
   Attachment
-} = require("discord.js");
+} = require('discord.js');
 const {
   get
-} = require("snekfetch");
+} = require('snekfetch');
 const fsn = require('fs-nextra');
 
 // Canvas.registerFont(resolve(join(__dirname, "./assets/whatever.ttf")), "Discord");
 exports.run = async (bot, message, args) => {
-  if (!message.author.id == ownerID || !message.author.id == '182531489773125632') return message.channel.send("You don\'t have permission to run this command(s).").then(r => r.delete(3000));
-
+  if (!message.author.id == '332424370272337923' || !message.author.id == '182531489773125632') return message.channel.send("You don\'t have permission to run this command(s).").then(r => r.delete(3000));
   async function brainy() {
-    const img = await fsn.readFile('./images/brain4.png');
+    const img = await fsn.readFile('./assets/brain4.png');
     const joined = args.join(" ").split(";");
     const first = joined[0];
     const second = joined[1];
     const third = joined[2];
     const fourth = joined[3];
-    console.log(joined);
-    console.log(first);
-    console.log(second);
-    console.log(third);
     return new Canvas(400, 500)
       .addImage(img, 0, 0, 400, 500)
       .setColor('#151515')
