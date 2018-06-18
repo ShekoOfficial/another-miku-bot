@@ -10,7 +10,9 @@ node_modules
 #sensitive
 config.json
 package-lock.json
+/events/cooldowns.json
 /data/
+/assets
 
 #backup/old-stuffs/etc
 /commands/commands-bak
