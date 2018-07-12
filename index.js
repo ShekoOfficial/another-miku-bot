@@ -3,14 +3,14 @@ const bot = new Discord.Client();
 const fs = require('fs');
 const {
   promisify
-} = require("util");
+} = require('util');
 const readdir = promisify(fs.readdir);
-const Enmap = require("enmap");
-const EnmapLevel = require("enmap-level");
+const Enmap = require('enmap');
+const EnmapLevel = require('enmap-level');
 const nekoclient = require('nekos.life');
 const neko = new nekoclient();
 require('./util/eventLoader.js')(bot);
-require("./modules/function.js")(bot);
+require('./modules/function.js')(bot);
 
 // RELOAD
 var reload = (message, cmd) => {

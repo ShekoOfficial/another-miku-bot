@@ -4,7 +4,7 @@ const neko = new nekoclient();
 
 // START-MAIN
 exports.run = async (bot, message, args) => {
-  if (!args[0]) return message.channel.send(["https://tinyurl.com/MikuOwOHehe", "UwU"].random());
+  if (!args[0]) return message.channel.send(["https://tinyurl.com/MikuOwOHehe", "UwU", "https://tinyurl.com/MikuOwO"].random());
   else {
     const text = await neko.getSFWOwOify({
       text: args.join(" ")
@@ -24,7 +24,7 @@ exports.help = {
   name: "owo",
   category: "Fun",
   description: "OwO What\'s this?\nEnygwish Twanyswatow!",
-  usage: "owo \`<text>\`",
+  usage: "owo <text>",
   param: "",
   aliases: ""
 };

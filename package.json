@@ -14,15 +14,18 @@
     "chalk": "^2.4.1",
     "discord.js": "^11.3.2",
     "dog-names": "^1.0.2",
-    "enmap": "^2.2.1",
+    "enmap": "^2.6.3",
     "enmap-level": "^2.1.0",
     "fs-nextra": "^0.3.5",
-    "gfycat-sdk": "^1.4.15",
+    "gfycat-sdk": "^1.4.16",
     "google-images": "^2.1.0",
-    "mathjs": "^4.2.1",
+    "mathjs": "^5.0.0",
     "nekos.life": "^1.0.5",
-    "npm": "^6.0.1",
-    "relevant-urban": "^2.0.0"
+    "npm": "^6.1.0",
+    "relevant-urban": "^2.0.0",
+    "canvas": "^1.6.11",
+    "canvas-constructor": "^1.0.1",
+    "anime-scraper": "^3.0.0"
   },
   "devDependencies": {},
   "repository": {

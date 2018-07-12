@@ -19,7 +19,7 @@ exports.run = async (bot, message, args) => {
     reply.edit({
       embed
     });
-  }).catch(e => reply.edit(`❌ | **Error :** Unable to find **${args.join(" ")}**.\nOr try again. `));
+  }).catch(e => reply.edit(`❌ | Something went wrong. Please try again.`));
 }
 exports.conf = {
   aliases: ["gs"],
@@ -30,7 +30,7 @@ exports.help = {
   name: "google",
   category: "Misc.",
   description: "Google image search",
-  usage: "google \`<search_query>\`",
+  usage: "google <search-query>",
   param: "",
   aliases: "gs"
 }
