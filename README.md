@@ -1,5 +1,5 @@
 # Miku Bot
-[![N|Solid](https://img.shields.io/npm/v/discord.js.svg?maxAge=3600)](https://nodejs.org/en//)
+[![N|Solid](https://img.shields.io/npm/v/discord.js.svg?maxAge=3600)](https://nodejs.org/en/)
 [![N|Solid](https://img.shields.io/npm/dt/discord.js.svg?maxAge=3600)](https://discord.js.org)
 
 [![N|Solid](https://nodei.co/npm/discord.js.png?downloads=true&stars=true)](https://www.npmjs.org/package/discord.js)
@@ -13,12 +13,12 @@ This bot is a just4fun bot, which does not meant to do administrator-side stuffs
 ### What can this bot do?
 - Fun stuffs
 - Give you quotes
-- Make you laugh
+- Makes you laugh
 - Gives you the power of the *Magic 8 Ball*
 - Much much more in future!
 
 ### Modules
-You need to install these modules to run **Miku**, especially [discord.js](https://www.npmjs.com/package/discord.js) library.
+Used Libraries:
 
 | Modules | Link |
 | ------ | ------ |
@@ -39,13 +39,14 @@ You need to install these modules to run **Miku**, especially [discord.js](https
 
 >Note that not all packages are important. But I'd recommend you to install everything to run all commands smoothly.
 
-### Usage
+### Usage & Modules
 
 You need [Node.js](https://nodejs.org/) v8+ to run the bot.
-After installation & downloading this repository (including the modules) :
 
 Head to the bot directory and then simply run
 ```sh
+$ npm i -S
+# and then
 $ node index.js
 ```
 And you are good to go!
